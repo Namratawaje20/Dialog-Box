@@ -155,46 +155,49 @@
             color: #ffebcd;
         }
     </style>
-
 </head>
 <body>
-        <!-- Overlay -->
-        <div class="overlay" id="overlay" onclick="closeDialog()"></div>
 
-        <!-- Dialog Box -->
-        <div class="dialog-box" id="dialogBox">
-            <button class="close-btn" onclick="closeDialog()">✖</button>
-            <div class="dialog-content">
-                <!-- Image Section -->
-                <div class="image-section">
-                    <img src="bootcamp-illustration.avif" alt="Web Development Illustration">
-                </div>
-                <div class="text-section">
-                    <h2>Join Our Web Development Bootcamp!</h2>
-                    <p>Scan the QR code to learn more about our intensive program and kickstart your coding journey.</p>
-                    <p class="hindi-description">शुरू करें अपनी नई यात्रा, आज ही जुड़ें!</p>
-                    <img src="bootcamp-qr.png" alt="QR Code" class="qr-code">
-                </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeDialog()"></div>
+
+    <!-- Dialog Box -->
+    <div class="dialog-box" id="dialogBox">
+        <button class="close-btn" onclick="closeDialog()">✖</button>
+        <div class="dialog-content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="bootcamp-illustration.avif" alt="Web Development Illustration">
             </div>
-            <!-- Enroll Button -->
-            <button class="enroll-btn" onclick="enroll()">Enroll Now</button>
+            <!-- Text and QR Code Section -->
+            <div class="text-section">
+                <h2>Join Our Web Development Bootcamp!</h2>
+                <p>Scan the QR code to learn more about our intensive program and kickstart your coding journey.</p>
+                <p class="hindi-description">शुरू करें अपनी नई यात्रा, आज ही जुड़ें!</p>
+                <img src="bootcamp-qr.png" alt="QR Code" class="qr-code">
+            </div>
         </div>
-        <button onclick="openDialog()" class="enroll-btn" style="width: auto; margin-top: 20px;">Open Bootcamp Dialog</button>
-            </div>
-            <script>
-                function openDialog() {
-                    document.getElementById('dialogBox').classList.add('open');
-                    document.getElementById('overlay').classList.add('open');
-                }
-        
-                function closeDialog() {
-                    document.getElementById('dialogBox').classList.remove('open');
-                    document.getElementById('overlay').classList.remove('open');
-                }
-        
-                function enroll() {
-                    alert('Proceeding to enroll...');
-                }
-            </script>
+        <!-- Enroll Button -->
+        <button class="enroll-btn" onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <!-- Button to Open Dialog -->
+    <button onclick="openDialog()" class="enroll-btn" style="width: auto; margin-top: 20px;">Open Bootcamp Dialog</button>
+
+    <script>
+        function openDialog() {
+            document.getElementById('dialogBox').classList.add('open');
+            document.getElementById('overlay').classList.add('open');
+        }
+
+        function closeDialog() {
+            document.getElementById('dialogBox').classList.remove('open');
+            document.getElementById('overlay').classList.remove('open');
+        }
+
+        function enroll() {
+            alert('Proceeding to enroll...');
+        }
+    </script>
 </body>
 </html>
