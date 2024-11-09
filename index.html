@@ -29,5 +29,20 @@
         </div>
         <button onclick="openDialog()" class="enroll-btn" style="width: auto; margin-top: 20px;">Open Bootcamp Dialog</button>
             </div>
+            <script>
+                function openDialog() {
+                    document.getElementById('dialogBox').classList.add('open');
+                    document.getElementById('overlay').classList.add('open');
+                }
+        
+                function closeDialog() {
+                    document.getElementById('dialogBox').classList.remove('open');
+                    document.getElementById('overlay').classList.remove('open');
+                }
+        
+                function enroll() {
+                    alert('Proceeding to enroll...');
+                }
+            </script>
 </body>
 </html>
